@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  font-family: monospace;
+  margin: 0;
+}
+
+.main {
+  flex: 0 0 70%;
+  padding: 20px;
+  background-color: rgb(213, 238, 254);
+}
+
+.text {
+  text-align: center;
+  margin-top: 250px;
+}
+
+.main,
+.text,
+.user-display {
+  font-size: 60px;
+  color: rgb(208, 77, 255);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-group button {
+  width: 30%;
+  height: 50px;
+}
+
+button {
+  background-color: rgb(47, 190, 171);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: 30%;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  transition: 0.3s ease-out;
+  background-color: rgb(111, 252, 233);
+  color: black;
+}
+
+#reset {
+  width: 20%;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 190, 171);
+  border: 2px solid rgb(47, 190, 171);
+  margin-top: 10px;
+}
+
+#reset:hover {
+  background-color: rgb(47, 190, 171);
+  color: white;
+}
+
+.sidebar {
+  flex: 0 0 30%;
+  background-color: rgb(7, 92, 137);
+  overflow-y: auto;
+  margin-top: 0;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 35px;
+  color: rgb(225, 150, 253);
+}
+
+hr {
+  height: 9px;
+  background-color: lightcoral;
+  margin: 20px auto;
+  width: 60%;
+  border-color: rgb(47, 190, 171);
+  border-width: 3px;
+  border-style: double;
+}
+
+ul {
+  font-size: 20px;
+  color: rgb(225, 150, 253);
+}
+
+button.plus {
+  color: lightcoral;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+button.plus:hover {
+  color: white;
+}
+
+button.minus {
+  color: rgb(112, 228, 190);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+button.minus:hover {
+  color: white;
+}
+
+.highlight {
+  background-color: rgb(130, 207, 255);
+  border-radius: 5px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.legend {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  margin: 20px auto 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  width: 90%;
+  box-sizing: border-box;
+}
+.legend h3 {
+  margin-top: 0;
+  color: lightyellow;
+  font-size: 18px;
+}
+.legend p {
+  margin: 6px 0;
+}
